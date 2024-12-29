@@ -6,9 +6,9 @@ export function Skills() {
       <div className="flex justify-center items-center flex-col">
         <h1 className="font-semibold text-[4rem] mb-14">Skills</h1>
         <div className="flex gap-14  w-[66.2%] overflow-auto mb-8">
-          {skillsIcons.map((item) => {
+          {skillsIcons.map((item, index) => {
             return (
-              <div className="relative flex flex-col ">
+              <div key={index} className="relative flex flex-col ">
                 <div
                   className={
                     item.tcClass +

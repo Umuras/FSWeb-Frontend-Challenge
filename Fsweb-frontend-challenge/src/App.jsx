@@ -3,6 +3,7 @@ import "./App.css";
 import { Header } from "./components/Header";
 import { Introduction } from "./components/Introduction";
 import { Skills } from "./components/Skills";
+import { Profile } from "./components/Profile";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       </section>
       <div className="z-20 w-[9rem] h-[9rem] border-[1.5rem] border-solid border-gray-300 rounded-full translate-x-[89rem] translate-y-[-4.5rem] "></div>
       <Skills />
-      <div className="w-[9rem] h-[9rem] border-[1.5rem] border-solid border-pink-600 rounded-full translate-x-[112.75rem] translate-y-[6.5rem] "></div>
+      <div className="w-[9rem] h-[9rem] border-[1.5rem] border-solid border-pink-600 rounded-full translate-x-[112.75rem] translate-y-[6.85rem] "></div>
+      <Profile />
     </>
   );
 }

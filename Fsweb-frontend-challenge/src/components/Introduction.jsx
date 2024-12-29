@@ -25,8 +25,15 @@ export function Introduction() {
         </div>
       </div>
       <div className="my-7">
-        <i className="bx bxl-linkedin bx-lg m-0 mr-4"></i>
-        <i className="bx bxl-github bx-lg"></i>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/ali-umur-kucur-2190911b6/"
+        >
+          <i className="bx bxl-linkedin bx-lg m-0 mr-4"></i>
+        </a>
+        <a target="_blank" href="https://github.com/Umuras">
+          <i className="bx bxl-github bx-lg"></i>
+        </a>
       </div>
       <label className="font-['Arial'] text-[1.5rem]">
         Şuanda Game Developer olarak Freelancer çalışıyorum.
