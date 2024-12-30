@@ -41,11 +41,17 @@ export function Profile() {
 
             <div className="flex flex-col ">
               <label className="text-lg mb-4">
-                3 yıla yakın game developer tecrübem bulunmaktadır. Çalıştığım
-                oyun MMORPG türünde olan Polity'dir. Bu projede hem içerik
-                girişi hem de tool geliştirme üzerine çalıştım. Şimdi ise
-                Full-Stack Developer olarak kendimi her geçen gün
-                geliştiriyorum.
+                3 yıla yakın game developer tecrübem var. Çalıştığım oyun MMORPG
+                türünde olan{" "}
+                <a
+                  target="_blank"
+                  href="https://store.steampowered.com/app/1479480/Polity__Online_Role_Playing/"
+                >
+                  Polity
+                </a>
+                'dir. Bu projede hem içerik girişi hem de tool geliştirme
+                üzerine çalıştım. Şimdi ise Full-Stack Developer olarak kendimi
+                her geçen gün geliştiriyorum.
               </label>
               <label className="text-lg">
                 Game Developer olarak toplamda 3 projem var. Kill the All
