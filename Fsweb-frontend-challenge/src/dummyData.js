@@ -187,13 +187,14 @@ export const projectsInformation = [
     structures: ["html", "css"],
     github: "https://github.com/Umuras/Wit1024-WitFlixTraining",
     app: "",
+    laptopPos: "translate-x-[-1.5rem] translate-y-[3.35rem] ",
+    imgPos: "translate-x-[3.95rem] translate-y-[2.24rem] ",
   },
   {
     projectImg: pizzaproject,
     title: "Pizza Order Project",
     description:
-      "Bu proje Full-Stack Developer eğitiminin 2.ayında yapılmıştır. Pizza siparişi verebildiğiniz bir sitedir. Ana sayfa üzerinden" +
-      " sipariş sayfasına geçilip oradan istediğiniz türde pizza siparişi verip sipariş sonucunuzu görüntülüyebildiğiniz bir sitedir",
+      "Bu proje Full-Stack Developer eğitiminin 2.ayında yapılmıştır. Pizza siparişi verebildiğiniz bir sitedir. ",
     structures: [
       "html",
       "css",
@@ -201,20 +202,22 @@ export const projectsInformation = [
       "reactstrap",
       "cypress",
       "axios",
-      "styled.component",
+      "styledcpts",
     ],
     github: "https://github.com/Umuras/fsweb-s8-challenge-pizza",
     app: "https://fsweb-s8-challenge-pizza-six.vercel.app/",
+    laptopPos: "translate-x-[-1.5rem] translate-y-[-0.91rem]",
+    imgPos: "translate-x-[3.95rem] translate-y-[-2rem]",
   },
   {
     projectImg: polity,
     title: "Polity MMORPG Game",
-    description:
-      "Polity, Social MMORPG türünde çevrimiçi sosyallik oyunudur. Burada bir ülkenin vatandaşı olup ülkeye hizmet edebilir, " +
-      "ülkeye başkan olup ülkeyi yönetebilir ve kendi hayatınızı kendiniz inşa edebilirsiniz.",
+    description: "Polity, Social MMORPG türünde çevrimiçi sosyallik oyunudur.",
     structures: ["unity", "c#", "strangeioc", "java", "springboot"],
     github: "",
     app: "https://store.steampowered.com/app/1479480/Polity__Online_Role_Playing/?l=turkish",
+    laptopPos: "translate-x-[-1.5rem] translate-y-[2.05rem]",
+    imgPos: "translate-x-[3.95rem] translate-y-[1rem]",
   },
   {
     projectImg: bussimulator,
@@ -224,6 +227,8 @@ export const projectsInformation = [
     structures: ["unity", "c#"],
     github: "",
     app: "https://play.google.com/store/apps/details?id=com.geneticstudio.bussimulator2017",
+    laptopPos: "translate-x-[-1.5rem] translate-y-[3.35rem]",
+    imgPos: "translate-x-[3.95rem] translate-y-[2.24rem]",
   },
   {
     projectImg: tictactoe,
@@ -233,6 +238,8 @@ export const projectsInformation = [
     structures: ["unity", "c#"],
     github: "https://github.com/Umuras/Tic-Tac-Toe",
     app: "",
+    laptopPos: "translate-x-[-1.5rem] translate-y-[3.35rem]",
+    imgPos: "translate-x-[3.95rem] translate-y-[2.24rem]",
   },
   {
     projectImg: zombiegame,
@@ -242,6 +249,8 @@ export const projectsInformation = [
     structures: ["unity", "c#", "strangeioc", "addressable", "promise"],
     github: "https://github.com/Umuras/Kill-The-All-Zombies-Before-Too-Late",
     app: "https://umuras.itch.io/kill-the-all-zombies-before-too-late",
+    laptopPos: "translate-x-[-1.5rem] translate-y-[2.1rem]",
+    imgPos: "translate-x-[3.95rem] translate-y-[1rem]",
   },
   {
     projectImg: wordgame,
@@ -251,14 +260,18 @@ export const projectsInformation = [
     structures: ["js", "pixijs", "matterjs", "html"],
     github: "https://github.com/Umuras/TheWordGame",
     app: "",
+    laptopPos: "translate-x-[-1.5rem] translate-y-[2rem]",
+    imgPos: "translate-x-[3.95rem] translate-y-[0.92rem]",
   },
   {
     projectImg: appointment,
     title: "Randevu Hatırlatma Programı",
     description:
-      "Bu programda hasta kaydı oluşturup o hasta için randevu oluşturup randevuları ve hasta bilgilerini düzenleyip silebildiğiniz, aynı zamanda en önemli özelliği ise hastanın randevusunu size 7 gün, 1 gün veya aynı gün olduğunda bilgisayar üzerinden ve mail üzerinden haber vermesidir.Bu programda hasta kaydı oluşturup o hasta için randevu oluşturup randevuları ve hasta bilgilerini düzenleyip silebildiğiniz, aynı zamanda en önemli özelliği ise hastanın randevusunu size 7 gün, 1 gün veya aynı gün olduğunda bilgisayar üzerinden ve mail üzerinden haber vermesidir.",
+      "Bu programda hasta kaydı oluşturup o hasta için randevu oluşturup randevuları ve hasta bilgilerini düzenlebildiğiniz randevu takip programıdır.",
     structures: ["c#", "wpf", "windowsforms", "sql", "ado.net"],
     github: "https://github.com/Umuras/PatientAppointmentReminder",
     app: "",
+    laptopPos: "translate-x-[-1.5rem] translate-y-[0.3rem]",
+    imgPos: "translate-x-[3.95rem] translate-y-[-0.8rem]",
   },
 ];
