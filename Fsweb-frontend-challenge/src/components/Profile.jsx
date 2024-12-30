@@ -1,7 +1,7 @@
 export function Profile() {
   return (
     <div className="flex justify-center flex-col items-center pb-[6rem] bg-gray-200">
-      <h1 className="font-semibold text-[3rem] mt-16 mb-8">Profile</h1>
+      <h1 className="font-semibold text-[3rem] mt-16 mb-8">Profil</h1>
       <section className="flex flex-row gap-14">
         <div className="absolute bg-gray-400 rounded-2xl border-solid border-[5px] w-[37rem] h-[22.5rem] translate-x-4 translate-y-2"></div>
         <div className="relative z-30 flex flex-col gap-6 bg-white rounded-2xl border-none  w-[37rem] h-[22rem]">

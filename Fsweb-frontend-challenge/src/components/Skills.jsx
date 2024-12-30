@@ -4,7 +4,7 @@ export function Skills() {
   return (
     <>
       <div className="flex justify-center items-center flex-col">
-        <h1 className="font-semibold text-[4rem] mb-14">Skills</h1>
+        <h1 className="font-semibold text-[4rem] mb-14">Yetenekler</h1>
         <div className="flex gap-14  w-[66.2%] overflow-auto mb-8">
           {skillsIcons.map((item, index) => {
             return (

@@ -268,7 +268,7 @@ export const projectsInformation = [
     title: "Randevu Hatırlatma Programı",
     description:
       "Bu programda hasta kaydı oluşturup o hasta için randevu oluşturup randevuları ve hasta bilgilerini düzenlebildiğiniz randevu takip programıdır.",
-    structures: ["c#", "wpf", "windowsforms", "sql", "ado.net"],
+    structures: ["c#", "wpf", "winforms", "sql", "ado.net"],
     github: "https://github.com/Umuras/PatientAppointmentReminder",
     app: "",
     laptopPos: "translate-x-[-1.5rem] translate-y-[0.3rem]",
