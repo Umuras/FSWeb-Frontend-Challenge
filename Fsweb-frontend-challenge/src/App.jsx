@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Introduction } from "./components/Introduction";
@@ -6,18 +6,39 @@ import { Skills } from "./components/Skills";
 import { Profile } from "./components/Profile";
 import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
+import { UserContext } from "./contexts/UserContext";
+import { ToastContainer, toast } from "react-toastify";
 
 function App() {
+  const { darkMode } = useContext(UserContext);
+
   return (
     <>
-      <section className="bg-gray-200 w-full -z-10 pb-32">
-        <div className="z-10 w-[8.35rem] h-[5rem] bg-gray-300 rounded-b-[5rem] translate-x-[35rem] "></div>
+      <section
+        className={
+          "w-full -z-10 pb-32 " + (darkMode ? "bg-zinc-800" : "bg-gray-200")
+        }
+      >
+        {/* {toast.success("Ali Umur Kucur'un CV sitesine hoş geldiniz")} */}
+        <div
+          className={
+            "z-10 w-[8.35rem] h-[5rem] rounded-b-[5rem] translate-x-[35rem] " +
+            (darkMode ? "bg-zinc-700" : "bg-gray-300")
+          }
+        ></div>
         <Header />
         <Introduction />
       </section>
-      <div className="z-20 w-[9rem] h-[9rem] border-[1.5rem] border-solid border-gray-300 rounded-full translate-x-[89rem] translate-y-[-4.5rem] "></div>
-      <Skills />
-      <div className="w-[9rem] h-[9rem] border-[1.5rem] border-solid border-pink-600 rounded-full translate-x-[112.75rem] translate-y-[6.85rem] "></div>
+      <section className={darkMode ? "bg-zinc-700" : ""}>
+        <div
+          className={
+            "z-20 w-[9rem] h-[9rem] border-[1.5rem] border-solid rounded-full translate-x-[89rem] translate-y-[-4.5rem] " +
+            (darkMode ? "border-zinc-600" : "border-gray-300")
+          }
+        ></div>
+        <Skills />
+        <div className="w-[9rem] h-[9rem] border-[1.5rem] border-solid border-pink-600 rounded-full translate-x-[112.75rem] translate-y-[6.85rem] "></div>
+      </section>
       <Profile />
       <Projects />
       <Footer />
