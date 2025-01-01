@@ -2,15 +2,37 @@ import profilePhoto from "../assets/profilephoto.jpg";
 import "boxicons";
 import { useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
+import {
+  introductionBottomDescription,
+  introductionDescription,
+  introductionHello,
+  TURKISH,
+} from "../dummyData";
 
 export function Introduction() {
-  const { darkMode } = useContext(UserContext);
+  const { darkMode, language } = useContext(UserContext);
+
+  function changeHelloWord() {
+    if (language === TURKISH) {
+      return introductionHello.turkish;
+    } else {
+      return introductionHello.english;
+    }
+  }
+
+  function changeIntroDescription() {
+    if (language === TURKISH) {
+      return introductionDescription.turkish;
+    } else {
+      return introductionDescription.english;
+    }
+  }
 
   return (
     <div className={"flex flex-col mx-40 " + (darkMode ? "dark" : "")}>
       <div className="mb-4">
         <label className={"font-semibold text-[2.5rem] dark:text-white"}>
-          Merhaba! 👋
+          {changeHelloWord()}
         </label>
       </div>
 
@@ -20,9 +42,15 @@ export function Introduction() {
             "z-20 relative font-semibold text-[3.5rem] w-1/2 dark:text-white"
           }
         >
-          Ben Ali Umur Kucur. Ben Full-Stack ve Game Developerım. Sağlam ve
-          ölçeklenebilir ön uç ürünler üretebilirim. Hadi tanışalım!
-          <div className="absolute -z-40 w-[12rem] h-[3rem] bg-pink-600 rounded-[.5rem] translate-y-[-23rem] translate-x-[-2rem]"></div>
+          {changeIntroDescription()}
+          <div
+            className={
+              "absolute -z-40 w-[12rem] h-[3rem] bg-pink-600 rounded-[.5rem] translate-x-[-2rem] " +
+              (language === TURKISH
+                ? "translate-y-[-23rem]"
+                : "translate-y-[-18rem]")
+            }
+          ></div>
         </label>
 
         <div className="relative w-[30rem] h-[27.5rem] bg-pink-600 rounded-[2.5rem] mr-8">
@@ -44,12 +72,24 @@ export function Introduction() {
         </a>
       </div>
       <label className={"font-['Arial'] text-[1.5rem] dark:text-white"}>
-        Şuanda <label className="text-pink-700 underline">Game Developer</label>{" "}
-        olarak <label className="text-pink-700 underline">Freelancer</label>{" "}
-        çalışıyorum.
+        {language === TURKISH
+          ? introductionBottomDescription.turkishFirst
+          : introductionBottomDescription.englishFirst}
+        <label className="text-pink-700 underline">
+          {language === TURKISH ? "Game Developer" : "Freelancer"}
+        </label>{" "}
+        {language === TURKISH
+          ? introductionBottomDescription.turkishSecond
+          : introductionBottomDescription.englishSecond}
+        <label className="text-pink-700 underline">
+          {language === TURKISH ? "Freelancer" : "Game Developer."}
+        </label>{" "}
+        {language === TURKISH ? "çalışıyorum." : ""}
       </label>
       <label className={"font-['Arial'] text-[1.5rem] dark:text-white"}>
-        Beni takımına katılmam için davet et -{" "}
+        {language === TURKISH
+          ? introductionBottomDescription.turkishFinal
+          : introductionBottomDescription.englishFinal}
         <a className="text-pink-700 underline" href="/">
           aliumurkucur@gmail.com
         </a>{" "}

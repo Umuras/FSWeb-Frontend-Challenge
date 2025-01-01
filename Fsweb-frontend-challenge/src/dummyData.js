@@ -31,6 +31,9 @@ import zombiegame from "./assets/zombiegame.jpg";
 import wordgame from "./assets/wordgame.png";
 import appointment from "./assets/hastanerandevu.jpg";
 
+export const TURKISH = "turkish";
+export const ENGLISH = "english";
+
 export const skillsIcons = [
   {
     icon: js,
@@ -181,97 +184,221 @@ export const skillsIcons = [
 export const projectsInformation = [
   {
     projectImg: witflix,
-    title: "Witflix Project",
-    description:
-      "Bu proje Full-Stack Developer eğitiminin 1.ayında yapılmıştır ve Netflixin ana sayfasının şablon tasarımı yapılmıştır.",
+    turkishTitle: "Witflix Projesi",
+    englishTitle: "Witflix Project",
+    turkishDescription:
+      "Full-Stack Developer eğitiminin 1.ayında temel html ve css teknikleri ile Netflixin ana sayfasının şablon tasarımı yapılmıştır.",
+    englishDescription:
+      "In the 1st month of the Full-Stack Developer training, the template design of Netflix's home page was made using basic HTML and CSS techniques.",
     structures: ["html", "css"],
     github: "https://github.com/Umuras/Wit1024-WitFlixTraining",
     app: "",
-    laptopPos: "translate-x-[-1.5rem] translate-y-[3.35rem] ",
-    imgPos: "translate-x-[3.95rem] translate-y-[2.24rem] ",
+    turkishLaptopPos: "translate-x-[-1.5rem] translate-y-[4.35rem] ",
+    turkishImgPos: "translate-x-[3.95rem] translate-y-[3.24rem] ",
+    englishLaptopPos: "translate-x-[-1.5rem] translate-y-[4.35rem] ",
+    englishImgPos: "translate-x-[3.95rem] translate-y-[3.24rem] ",
   },
   {
     projectImg: pizzaproject,
-    title: "Pizza Order Project",
-    description:
-      "Bu proje Full-Stack Developer eğitiminin 2.ayında yapılmıştır. Pizza siparişi verebildiğiniz bir sitedir. ",
-    structures: [
-      "html",
-      "css",
-      "react",
-      "reactstrap",
-      "cypress",
-      "axios",
-      "styledcpts",
-    ],
+    turkishTitle: "Pizza Sipariş Projesi",
+    englishTitle: "Pizza Order Project",
+    turkishDescription:
+      "Axios kullanılan, React ile komponent yapısının kullanıldığı, routing işlemleri ile sayfa geçişlerinin olduğu, state yapısı ile dataların taşındığı bir pizza sipariş projesidir.",
+    englishDescription:
+      "It is a project in which Axios is used, component structure is used with React, page transitions are made with routing operations, and data is moved with the state structure.",
+    structures: ["html", "css", "react", "reactstrap", "cypress", "axios"],
     github: "https://github.com/Umuras/fsweb-s8-challenge-pizza",
     app: "https://fsweb-s8-challenge-pizza-six.vercel.app/",
-    laptopPos: "translate-x-[-1.5rem] translate-y-[-0.91rem]",
-    imgPos: "translate-x-[3.95rem] translate-y-[-2rem]",
+    turkishLaptopPos: "translate-x-[-1.5rem] translate-y-[-0.4rem]",
+    turkishImgPos: "translate-x-[3.95rem] translate-y-[-1.5rem]",
+    englishLaptopPos: "translate-x-[-1.5rem] translate-y-[-0.4rem]",
+    englishImgPos: "translate-x-[3.95rem] translate-y-[-1.5rem]",
   },
   {
     projectImg: polity,
-    title: "Polity MMORPG Game",
-    description: "Polity, Social MMORPG türünde çevrimiçi sosyallik oyunudur.",
+    turkishTitle: "Polity MMORPG Oyunu",
+    englishTitle: "Polity MMORPG Game",
+    turkishDescription:
+      "Polity, Social MMORPG türünde çevrimiçi sosyallik oyunudur.",
+    englishDescription:
+      "Polity is an online social game in the Social MMORPG genre.",
     structures: ["unity", "c#", "strangeioc", "java", "springboot"],
     github: "",
     app: "https://store.steampowered.com/app/1479480/Polity__Online_Role_Playing/?l=turkish",
-    laptopPos: "translate-x-[-1.5rem] translate-y-[2.05rem]",
-    imgPos: "translate-x-[3.95rem] translate-y-[1rem]",
+    turkishLaptopPos: "translate-x-[-1.5rem] translate-y-[3.1rem]",
+    turkishImgPos: "translate-x-[3.95rem] translate-y-[2rem]",
+    englishLaptopPos: "translate-x-[-1.5rem] translate-y-[3.1rem]",
+    englishImgPos: "translate-x-[3.95rem] translate-y-[2rem]",
   },
   {
     projectImg: bussimulator,
-    title: "Bus Simulator Realistic Game",
-    description:
+    turkishTitle: "Bus Simulator: Şehirler Arası",
+    englishTitle: "Bus Simulator Realistic Game",
+    turkishDescription:
       "Hem otobüs sürüp simülasyon deneyimi yaşamak, hem de trafik kurallarını öğrenmek istiyorsan, bu oyun tam sana göre.",
+    englishDescription:
+      "If you want to have a simulation experience by driving a bus and also learn traffic rules, this game is for you.",
     structures: ["unity", "c#"],
     github: "",
     app: "https://play.google.com/store/apps/details?id=com.geneticstudio.bussimulator2017",
-    laptopPos: "translate-x-[-1.5rem] translate-y-[3.35rem]",
-    imgPos: "translate-x-[3.95rem] translate-y-[2.24rem]",
+    turkishLaptopPos: "translate-x-[-1.5rem] translate-y-[4.38rem]",
+    turkishImgPos: "translate-x-[3.95rem] translate-y-[3.25rem]",
+    englishLaptopPos: "translate-x-[-1.5rem] translate-y-[6.12rem]",
+    englishImgPos: "translate-x-[3.95rem] translate-y-[5rem]",
   },
   {
     projectImg: tictactoe,
-    title: "Tic Tac Toe",
-    description:
+    turkishTitle: "Tic Tac Toe",
+    englishTitle: "Tic Tac Toe",
+    turkishDescription:
       "Arkadaşınla beraber hem eğlenip hem de güzelce vakit geçirmek istiyorsan bu XOX oyunu tam sana göre.",
+    englishDescription:
+      "If you want to have fun and have a good time with your friend, this XOX game is for you.",
     structures: ["unity", "c#"],
     github: "https://github.com/Umuras/Tic-Tac-Toe",
     app: "",
-    laptopPos: "translate-x-[-1.5rem] translate-y-[3.35rem]",
-    imgPos: "translate-x-[3.95rem] translate-y-[2.24rem]",
+    turkishLaptopPos: "translate-x-[-1.5rem] translate-y-[4.35rem]",
+    turkishImgPos: "translate-x-[3.95rem] translate-y-[3.24rem]",
+    englishLaptopPos: "translate-x-[-1.5rem] translate-y-[6rem]",
+    englishImgPos: "translate-x-[3.95rem] translate-y-[5.24rem]",
   },
   {
     projectImg: zombiegame,
-    title: "Kill The All Zombies Before Too Late",
-    description:
+    turkishTitle: "Kill The All Zombies Before Too Late",
+    englishTitle: "Kill The All Zombies Before Too Late",
+    turkishDescription:
       "Bu oyunda amacınız 60 saniye içerisinde bir dalgada oluşan tüm zombileri zaman bitmeden öldürmek.",
+    englishDescription:
+      "Your goal in this game is to kill all the zombies in a wave within 60 seconds before time runs out.",
     structures: ["unity", "c#", "strangeioc", "addressable", "promise"],
     github: "https://github.com/Umuras/Kill-The-All-Zombies-Before-Too-Late",
     app: "https://umuras.itch.io/kill-the-all-zombies-before-too-late",
-    laptopPos: "translate-x-[-1.5rem] translate-y-[2.1rem]",
-    imgPos: "translate-x-[3.95rem] translate-y-[1rem]",
+    turkishLaptopPos: "translate-x-[-1.5rem] translate-y-[3.1rem]",
+    turkishImgPos: "translate-x-[3.95rem] translate-y-[2rem]",
+    englishLaptopPos: "translate-x-[-1.5rem] translate-y-[3.1rem]",
+    englishImgPos: "translate-x-[3.95rem] translate-y-[2rem]",
   },
   {
     projectImg: wordgame,
-    title: "Kelime Oyunu",
-    description:
+    turkishTitle: "Kelime Oyunu",
+    englishTitle: "Word Game",
+    turkishDescription:
       "Canınız mı sıkıldı, kelime türetmek hoşunuza mı gidiyor, o zaman bu kelime oyunu tam size göre",
+    englishDescription:
+      "Are you bored or do you like to create words? Then this word game is for you.",
     structures: ["js", "pixijs", "matterjs", "html"],
     github: "https://github.com/Umuras/TheWordGame",
     app: "",
-    laptopPos: "translate-x-[-1.5rem] translate-y-[2rem]",
-    imgPos: "translate-x-[3.95rem] translate-y-[0.92rem]",
+    turkishLaptopPos: "translate-x-[-1.5rem] translate-y-[3rem]",
+    turkishImgPos: "translate-x-[3.95rem] translate-y-[1.92rem]",
+    englishLaptopPos: "translate-x-[-1.5rem] translate-y-[3rem]",
+    englishImgPos: "translate-x-[3.95rem] translate-y-[1.92rem]",
   },
   {
     projectImg: appointment,
-    title: "Randevu Hatırlatma Programı",
-    description:
+    turkishTitle: "Randevu Hatırlatma Programı",
+    englishTitle: "Appointment Reminder Program",
+    turkishDescription:
       "Bu programda hasta kaydı oluşturup o hasta için randevu oluşturup randevuları ve hasta bilgilerini düzenlebildiğiniz randevu takip programıdır.",
+    englishDescription:
+      "This is an appointment tracking program where you can create a patient record, create an appointment for that patient, and edit appointments and patient information.",
     structures: ["c#", "wpf", "winforms", "sql", "ado.net"],
     github: "https://github.com/Umuras/PatientAppointmentReminder",
     app: "",
-    laptopPos: "translate-x-[-1.5rem] translate-y-[0.3rem]",
-    imgPos: "translate-x-[3.95rem] translate-y-[-0.8rem]",
+    turkishLaptopPos: "translate-x-[-1.5rem] translate-y-[1.4rem]",
+    turkishImgPos: "translate-x-[3.95rem] translate-y-[0.3rem]",
+    englishLaptopPos: "translate-x-[-1.5rem] translate-y-[-0.4rem]",
+    englishImgPos: "translate-x-[3.95rem] translate-y-[-1.5rem]",
   },
 ];
+
+export const toggleLanguages = {
+  turkishDark: "KARANLIK MOD",
+  turkishLight: "AYDINLIK MOD",
+  englishDark: "DARK MODE",
+  englishLight: "LIGHT MODE",
+};
+
+export const languageArea = {
+  turkish: "INGILIZCE",
+  suffixTurkish: "'YE GEÇ",
+  english: "TURKISH",
+  prefixEnglish: "SWITCH TO ",
+};
+
+export const introductionHello = {
+  turkish: "Merhaba! 👋",
+  english: "Hello! 👋",
+};
+
+export const introductionDescription = {
+  turkish:
+    "Ben Ali Umur Kucur. Ben Full-Stack ve Game Developerım. Sağlam ve ölçeklenebilir ön uç ürünler üretebilirim. Hadi tanışalım!",
+  english:
+    "I'm Ali Umur Kucur. I'm a Full-Stack and Game Developer. I can craft solid and scalable frontend products. Let's meet!",
+};
+
+export const introductionBottomDescription = {
+  turkishFirst: "Şuanda ",
+  englishFirst: "I am currently working as a ",
+  turkishSecond: " olarak ",
+  englishSecond: " as a ",
+  turkishFinal: "Beni takımına katılmam için davet et - ",
+  englishFinal: "Invite me to join your team - ",
+};
+
+export const skillsTitle = {
+  turkish: "Yetenekler",
+  english: "Skills",
+};
+
+export const profileLanguage = {
+  turkishTitle: "Profil",
+  englishTitle: "Profile",
+  turkishBasicInfo: "Temel Bilgiler",
+  englishBasicInfo: "Basic Information",
+  turkishBirthDate: "Doğum tarihi",
+  englishBirthDate: "Birth Date",
+  turkishCityOfResidence: "İkamet Şehri",
+  englishCityOfResidence: "City",
+  turkishEducation: "Eğitim Durumu",
+  englishEducation: "Education",
+  turkishPreferredRole: "Tercih ettiği rol",
+  englishPreferredRole: "Preferred Role",
+  turkishAboutMe: "Hakkımda",
+  englishAboutMe: "About me",
+  turkishIst: "İstanbul",
+  englishIst: "Istanbul",
+  turkishUni:
+    "Yıldız Teknik Üniv. Kontrol ve Otomasyon Mühendisliği Lisans, 2021",
+  englishUni:
+    "Yildiz Technical Univ. Control and Automation Engineering Undergraduate, 2021",
+  turkishAboutMeFirstPartDescp:
+    "3 yıla yakın game developer tecrübem var. Çalıştığım oyun MMORPG türünde olan ",
+  turkishAboutMeSecondPartDescp: "Polity",
+  turkishAboutMeThirdPartDescp:
+    "'dir. Bu projede hem içerik girişi hem de tool geliştirme üzerine çalıştım. Şimdi ise Full-Stack Developer olarak kendimi her geçen gün geliştiriyorum.",
+  turkishAboutMeFinalPartDescp:
+    "Game Developer olarak toplamda 3 projem var. Kill the All Zombies, Tic Tac Toe ve Kelime Oyunu. Full-Stack Developer  olarak da 3 projem bulunmaktadır. Bunlar, WitFlix, Pizza Sipariş Sitesi ve CV sitesidir.",
+  englishAbouteMeFirstDescp:
+    "I have nearly 3 years of game developer experience. The game I'm working on is ",
+  englishAbouteMeSecondDescp: "Polity, ",
+  englishAbouteMeThirdDescp:
+    "which is in the MMORPG genre. In this project, I worked on both content entry and tool development. Now, as a Full-Stack Developer, I improve myself every day.",
+  englishAbouteMeFinalDescp:
+    "As a Game Developer, I have 3 projects in total. Kill the All Zombies, Tic Tac Toe and Word Game. I have 3 projects as a Full-Stack Developer. These are WitFlix, Pizza Ordering Site and CV site.",
+};
+
+export const footerDescp = {
+  turkish: "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
+  english: "Let's work together on your next product.",
+};
+
+export const projectsArea = {
+  turkishTitle: "Projeler",
+  englishTitle: "Projects",
+  turkishGithub: "Github'da Görüntüle",
+  englishGithub: "View on Github",
+  turkishApp: "Uygulamaya Git",
+  englishApp: "Go to App",
+};

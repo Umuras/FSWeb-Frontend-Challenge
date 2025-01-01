@@ -1,8 +1,9 @@
 import { useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
+import { profileLanguage, TURKISH } from "../dummyData";
 
 export function Profile() {
-  const { darkMode } = useContext(UserContext);
+  const { darkMode, language } = useContext(UserContext);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -12,7 +13,9 @@ export function Profile() {
         }
       >
         <h1 className={"font-semibold text-[3rem] mt-16 mb-8 dark:text-white"}>
-          Profil
+          {language === TURKISH
+            ? profileLanguage.turkishTitle
+            : profileLanguage.englishTitle}
         </h1>
         <section className="flex flex-row gap-14">
           <div
@@ -27,22 +30,32 @@ export function Profile() {
           >
             <div className="ml-12 mt-8">
               <label className=" text-red-600 text-[2rem]">
-                Temel Bilgiler
+                {language === TURKISH
+                  ? profileLanguage.turkishBasicInfo
+                  : profileLanguage.englishBasicInfo}
               </label>
             </div>
             <div className="flex flex-row gap-8 ml-12 ">
               <div className="flex flex-col gap-4 w-[45%]">
                 <label className="font-bold text-[1.15rem] dark:text-white">
-                  Doğum tarihi
+                  {language === TURKISH
+                    ? profileLanguage.turkishBirthDate
+                    : profileLanguage.englishBirthDate}
                 </label>
                 <label className="font-bold text-[1.15rem] dark:text-white">
-                  İkamet Şehri
+                  {language === TURKISH
+                    ? profileLanguage.turkishCityOfResidence
+                    : profileLanguage.englishCityOfResidence}
                 </label>
                 <label className="font-bold mb-14 text-[1.15rem] dark:text-white">
-                  Eğitim Durumu
+                  {language === TURKISH
+                    ? profileLanguage.turkishEducation
+                    : profileLanguage.englishEducation}
                 </label>
                 <label className="font-bold text-[1.15rem] dark:text-white">
-                  Tercih Ettiği Rol
+                  {language === TURKISH
+                    ? profileLanguage.turkishPreferredRole
+                    : profileLanguage.englishPreferredRole}
                 </label>
               </div>
               <div className="flex flex-col gap-4">
@@ -50,11 +63,14 @@ export function Profile() {
                   30.01.1997
                 </label>
                 <label className="font-semibold text-[1.15rem] dark:text-white">
-                  İstanbul
+                  {language === TURKISH
+                    ? profileLanguage.turkishIst
+                    : profileLanguage.englishIst}
                 </label>
                 <label className="font-semibold w-[70%] text-[1.15rem] dark:text-white">
-                  Yıldız Teknik Üniv. Kontrol ve Otomasyon Mühendisliği Lisans,
-                  2021
+                  {language === TURKISH
+                    ? profileLanguage.turkishUni
+                    : profileLanguage.englishUni}
                 </label>
                 <label className="font-semibold text-[1.15rem] dark:text-white">
                   Frontend, Game Developer
@@ -65,30 +81,35 @@ export function Profile() {
           <div className="flex flex-row gap-6 w-[37rem] h-[22rem]">
             <div className="flex flex-col gap-4 ml-8 mt-8">
               <label className="relative z-10 font-semibold text-2xl dark:text-white">
-                Hakkımda
+                {language === TURKISH
+                  ? profileLanguage.turkishAboutMe
+                  : profileLanguage.englishAboutMe}
+
                 <div className="absolute -z-10 w-[6rem] h-[1.5rem] bg-blue-300 rounded-[.5rem] translate-y-[-1rem] translate-x-[-1rem]"></div>
               </label>
 
               <div className="flex flex-col ">
                 <label className="text-lg mb-4 dark:text-white">
-                  3 yıla yakın game developer tecrübem var. Çalıştığım oyun
-                  MMORPG türünde olan{" "}
+                  {language === TURKISH
+                    ? profileLanguage.turkishAboutMeFirstPartDescp
+                    : profileLanguage.englishAbouteMeFirstDescp}
                   <a
                     target="_blank"
                     href="https://store.steampowered.com/app/1479480/Polity__Online_Role_Playing/"
                     className="dark:text-white"
                   >
-                    Polity
+                    {language === TURKISH
+                      ? profileLanguage.turkishAboutMeSecondPartDescp
+                      : profileLanguage.englishAbouteMeSecondDescp}
                   </a>
-                  'dir. Bu projede hem içerik girişi hem de tool geliştirme
-                  üzerine çalıştım. Şimdi ise Full-Stack Developer olarak
-                  kendimi her geçen gün geliştiriyorum.
+                  {language === TURKISH
+                    ? profileLanguage.turkishAboutMeThirdPartDescp
+                    : profileLanguage.englishAbouteMeThirdDescp}
                 </label>
                 <label className="text-lg dark:text-white">
-                  Game Developer olarak toplamda 3 projem var. Kill the All
-                  Zombies, Tic Tac Toe ve Kelime Oyunu. Full-Stack Developer
-                  olarak da 3 projem bulunmaktadır. Bunlar, WitFlix, Pizza
-                  Sipariş Sitesi ve CV sitesidir.
+                  {language === TURKISH
+                    ? profileLanguage.turkishAboutMeFinalPartDescp
+                    : profileLanguage.englishAbouteMeFinalDescp}
                 </label>
               </div>
             </div>

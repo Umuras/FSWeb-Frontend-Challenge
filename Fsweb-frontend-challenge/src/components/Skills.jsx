@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { skillsIcons } from "../dummyData.js";
+import { skillsIcons, skillsTitle, TURKISH } from "../dummyData.js";
 import { UserContext } from "../contexts/UserContext.jsx";
 
 export function Skills() {
-  const { darkMode } = useContext(UserContext);
+  const { darkMode, language } = useContext(UserContext);
 
   return (
     <>
@@ -14,7 +14,7 @@ export function Skills() {
         }
       >
         <label className={"font-semibold text-[4rem] mb-14 dark:text-white"}>
-          Yetenekler
+          {language === TURKISH ? skillsTitle.turkish : skillsTitle.english}
         </label>
         <div className="flex gap-14 w-[66.2%] overflow-auto mb-8">
           {skillsIcons.map((item, index) => {

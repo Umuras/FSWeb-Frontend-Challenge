@@ -1,16 +1,17 @@
 import { useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
+import { footerDescp, TURKISH } from "../dummyData";
 
 export function Footer() {
-  const { darkMode } = useContext(UserContext);
+  const { darkMode, language } = useContext(UserContext);
 
   return (
     <section className={darkMode ? "dark " : ""}>
       <div className="flex justify-center items-center relative z-30 gap-20 dark:bg-zinc-700">
         <div className="w-[30%]">
           <label className="font-semibold  text-5xl leading-relaxed z-10 dark:text-white">
-            Bir sonraki ürününüz üzerinde birlikte çalışalım.
-            <div className="absolute -z-10 w-[24rem] h-[1.5rem] bg-blue-300 rounded-[.5rem] translate-y-[-6.5rem] translate-x-[5rem]"></div>
+            {language === TURKISH ? footerDescp.turkish : footerDescp.english}
+            <div className="absolute -z-10 w-[24rem] h-[1.5rem] bg-purple-600 rounded-[.5rem] translate-y-[-6.5rem] translate-x-[5rem]"></div>
           </label>
         </div>
         <div className="flex flex-col gap-2">

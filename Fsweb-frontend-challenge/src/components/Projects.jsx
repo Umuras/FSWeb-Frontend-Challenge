@@ -1,11 +1,11 @@
 import "boxicons";
 import laptop from "../assets/laptop.png";
-import { projectsInformation } from "../dummyData.js";
+import { projectsArea, projectsInformation, TURKISH } from "../dummyData.js";
 import { useContext } from "react";
 import { UserContext } from "../contexts/UserContext.jsx";
 
 export function Projects() {
-  const { darkMode } = useContext(UserContext);
+  const { darkMode, language } = useContext(UserContext);
 
   function projectCardBackground(index) {
     if (index % 2 === 0) {
@@ -19,7 +19,9 @@ export function Projects() {
     <section className={darkMode ? "dark" : ""}>
       <div className="flex flex-col justify-center items-center pt-24  pb-[90rem] dark:bg-zinc-700">
         <label className="text-[3rem] mb-8 font-semibold dark:text-white">
-          Projeler
+          {language === TURKISH
+            ? projectsArea.turkishTitle
+            : projectsArea.englishTitle}
         </label>
         <div className="flex gap-16 h-[50rem] ">
           <div className="flex flex-wrap gap-16 justify-center ">
@@ -34,15 +36,20 @@ export function Projects() {
                   >
                     <div className="ml-10 mt-10">
                       <label className="font-semibold text-3xl dark:text-white">
-                        {item.title}
+                        {language === TURKISH
+                          ? item.turkishTitle
+                          : item.englishTitle}
                       </label>
-                      <p className="text-lg mt-8 w-10/12 mb-8 dark:text-white">
-                        {item.description}
+                      <p className="text-lg mt-6 w-10/12 mb-6 dark:text-white">
+                        {language === TURKISH
+                          ? item.turkishDescription
+                          : item.englishDescription}
                       </p>
                       <section className="flex flex-row gap-4 w-[65%] flex-wrap">
-                        {item.structures.map((it2) => {
+                        {item.structures.map((it2, index) => {
                           return (
                             <div
+                              key={index}
                               className={
                                 "relative w-[5.5rem] h-[2rem] rounded-2xl border-solid flex justify-center items-center bg-white dark:bg-zinc-700"
                               }
@@ -60,14 +67,19 @@ export function Projects() {
                           href={item.github}
                           className="text-2xl font-semibold dark:text-white"
                         >
-                          View on Github
+                          {language === TURKISH
+                            ? projectsArea.turkishGithub
+                            : projectsArea.englishGithub}
                         </a>
                         <a
                           target="_blank"
                           href={item.app}
                           className="text-2xl font-semibold flex items-center dark:text-white"
                         >
-                          Go to App
+                          {language === TURKISH
+                            ? projectsArea.turkishApp
+                            : projectsArea.englishApp}
+
                           <i className="bx bx-right-arrow-alt bx-md text-black dark:text-white"></i>
                         </a>
                       </section>
@@ -75,14 +87,21 @@ export function Projects() {
                         <img
                           src={laptop}
                           alt="Laptop"
-                          className={"mr-8 absolute z-10 " + item.laptopPos}
+                          className={
+                            "mr-8 absolute z-10 " +
+                            (language === TURKISH
+                              ? item.turkishLaptopPos
+                              : item.englishLaptopPos)
+                          }
                         />
                         <img
                           src={item.projectImg}
                           alt=""
                           className={
                             "absolute mt-12 w-[21.65rem] h-[13.5rem] " +
-                            item.imgPos
+                            (language === TURKISH
+                              ? item.turkishImgPos
+                              : item.englishImgPos)
                           }
                         />
                       </div>
