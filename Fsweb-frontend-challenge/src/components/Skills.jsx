@@ -7,12 +7,13 @@ export function Skills() {
 
   return (
     <>
-      <div className={"flex justify-center items-center flex-col"}>
-        <label
-          className={
-            "font-semibold text-[4rem] mb-14 " + (darkMode ? "text-white" : "")
-          }
-        >
+      <div
+        className={
+          "flex justify-center items-center flex-col " +
+          (darkMode ? "dark" : "")
+        }
+      >
+        <label className={"font-semibold text-[4rem] mb-14 dark:text-white"}>
           Yetenekler
         </label>
         <div className="flex gap-14 w-[66.2%] overflow-auto mb-8">

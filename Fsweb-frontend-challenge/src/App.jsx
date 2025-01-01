@@ -14,31 +14,27 @@ function App() {
 
   return (
     <>
-      <section
-        className={
-          "w-full -z-10 pb-32 " + (darkMode ? "bg-zinc-800" : "bg-gray-200")
-        }
-      >
-        {/* {toast.success("Ali Umur Kucur'un CV sitesine hoş geldiniz")} */}
-        <div
-          className={
-            "z-10 w-[8.35rem] h-[5rem] rounded-b-[5rem] translate-x-[35rem] " +
-            (darkMode ? "bg-zinc-700" : "bg-gray-300")
-          }
-        ></div>
-        <Header />
-        <Introduction />
-      </section>
-      <section className={darkMode ? "bg-zinc-700" : ""}>
-        <div
-          className={
-            "z-20 w-[9rem] h-[9rem] border-[1.5rem] border-solid rounded-full translate-x-[89rem] translate-y-[-4.5rem] " +
-            (darkMode ? "border-zinc-600" : "border-gray-300")
-          }
-        ></div>
-        <Skills />
-        <div className="w-[9rem] h-[9rem] border-[1.5rem] border-solid border-pink-600 rounded-full translate-x-[112.75rem] translate-y-[6.85rem] "></div>
-      </section>
+      <div className={darkMode ? "dark" : ""}>
+        <section className={"w-full -z-10 pb-32 bg-gray-200 dark:bg-zinc-800 "}>
+          {/* {toast.success("Ali Umur Kucur'un CV sitesine hoş geldiniz")} */}
+          <div
+            className={
+              "z-10 w-[8.35rem] h-[5rem] rounded-b-[5rem] translate-x-[35rem] " +
+              (darkMode ? "bg-zinc-700" : "bg-gray-300")
+            }
+          ></div>
+          <Header />
+          <Introduction />
+        </section>
+      </div>
+
+      <div className={darkMode ? "dark" : ""}>
+        <section className="dark:bg-zinc-700">
+          <div className="z-20 w-[9rem] h-[9rem] border-[1.5rem] border-solid rounded-full translate-x-[89rem] translate-y-[-4.5rem] border-gray-300 dark:border-zinc-600"></div>
+          <Skills />
+          <div className="w-[9rem] h-[9rem] border-[1.5rem] border-solid border-pink-600 rounded-full translate-x-[112.75rem] translate-y-[6.85rem] "></div>
+        </section>
+      </div>
       <Profile />
       <Projects />
       <Footer />

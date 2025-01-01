@@ -7,13 +7,9 @@ export function Introduction() {
   const { darkMode } = useContext(UserContext);
 
   return (
-    <div className="flex flex-col mx-40 ">
+    <div className={"flex flex-col mx-40 " + (darkMode ? "dark" : "")}>
       <div className="mb-4">
-        <label
-          className={
-            "font-semibold text-[2.5rem] " + (darkMode ? "text-white" : "")
-          }
-        >
+        <label className={"font-semibold text-[2.5rem] dark:text-white"}>
           Merhaba! 👋
         </label>
       </div>
@@ -21,8 +17,7 @@ export function Introduction() {
       <div className="flex justify-between ">
         <label
           className={
-            "z-20 relative font-semibold text-[3.5rem] w-1/2 " +
-            (darkMode ? "text-white" : "")
+            "z-20 relative font-semibold text-[3.5rem] w-1/2 dark:text-white"
           }
         >
           Ben Ali Umur Kucur. Ben Full-Stack ve Game Developerım. Sağlam ve
@@ -42,32 +37,18 @@ export function Introduction() {
           target="_blank"
           href="https://www.linkedin.com/in/ali-umur-kucur-2190911b6/"
         >
-          <i
-            className={
-              "bx bxl-linkedin bx-lg m-0 mr-4 " + (darkMode ? "text-white" : "")
-            }
-          ></i>
+          <i className={"bx bxl-linkedin bx-lg m-0 mr-4 dark:text-white"}></i>
         </a>
         <a target="_blank" href="https://github.com/Umuras">
-          <i
-            className={"bx bxl-github bx-lg " + (darkMode ? "text-white" : "")}
-          ></i>
+          <i className={"bx bxl-github bx-lg dark:text-white"}></i>
         </a>
       </div>
-      <label
-        className={
-          "font-['Arial'] text-[1.5rem] " + (darkMode ? "text-white" : "")
-        }
-      >
+      <label className={"font-['Arial'] text-[1.5rem] dark:text-white"}>
         Şuanda <label className="text-pink-700 underline">Game Developer</label>{" "}
         olarak <label className="text-pink-700 underline">Freelancer</label>{" "}
         çalışıyorum.
       </label>
-      <label
-        className={
-          "font-['Arial'] text-[1.5rem] " + (darkMode ? "text-white" : "")
-        }
-      >
+      <label className={"font-['Arial'] text-[1.5rem] dark:text-white"}>
         Beni takımına katılmam için davet et -{" "}
         <a className="text-pink-700 underline" href="/">
           aliumurkucur@gmail.com
