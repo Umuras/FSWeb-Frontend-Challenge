@@ -39,7 +39,7 @@ function App() {
       <Profile />
       <Projects />
       <Footer />
-      {/* <Request /> */}
+      <Request />
     </>
   );
 }
