@@ -242,9 +242,9 @@ export const projectsInformation = [
     github: "",
     app: "https://play.google.com/store/apps/details?id=com.geneticstudio.bussimulator2017",
     turkishLaptopPos: "translate-x-[-1.5rem] translate-y-[4.38rem]",
-    turkishImgPos: "translate-x-[3.95rem] translate-y-[3.25rem]",
+    turkishImgPos: "translate-x-[3.95rem] translate-y-[3.3rem]",
     englishLaptopPos: "translate-x-[-1.5rem] translate-y-[6.12rem]",
-    englishImgPos: "translate-x-[3.95rem] translate-y-[5rem]",
+    englishImgPos: "translate-x-[3.95rem] translate-y-[5.05rem]",
   },
   {
     projectImg: tictactoe,
@@ -260,7 +260,7 @@ export const projectsInformation = [
     turkishLaptopPos: "translate-x-[-1.5rem] translate-y-[4.35rem]",
     turkishImgPos: "translate-x-[3.95rem] translate-y-[3.24rem]",
     englishLaptopPos: "translate-x-[-1.5rem] translate-y-[6rem]",
-    englishImgPos: "translate-x-[3.95rem] translate-y-[5.24rem]",
+    englishImgPos: "translate-x-[3.95rem] translate-y-[4.95rem]",
   },
   {
     projectImg: zombiegame,
