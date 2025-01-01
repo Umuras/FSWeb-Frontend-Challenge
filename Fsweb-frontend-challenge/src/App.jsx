@@ -8,6 +8,7 @@ import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
 import { UserContext } from "./contexts/UserContext";
 import { ToastContainer, toast } from "react-toastify";
+import { Request } from "./components/Request";
 
 function App() {
   const { darkMode } = useContext(UserContext);
@@ -38,6 +39,7 @@ function App() {
       <Profile />
       <Projects />
       <Footer />
+      <Request />
     </>
   );
 }
