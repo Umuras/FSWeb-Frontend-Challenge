@@ -402,3 +402,11 @@ export const projectsArea = {
   turkishApp: "Uygulamaya Git",
   englishApp: "Go to App",
 };
+
+export const user = {
+  id: Math.floor(Math.random() * 10),
+  name: "Ali Umur Kucur",
+  year: 1997,
+  color: "#30D5C8",
+  pantone_value: "",
+};

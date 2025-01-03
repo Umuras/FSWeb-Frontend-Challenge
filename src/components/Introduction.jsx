@@ -29,23 +29,26 @@ export function Introduction() {
   }
 
   return (
-    <div className={"flex flex-col mx-40 " + (darkMode ? "dark" : "")}>
-      <div className="mb-4">
-        <label className={"font-semibold text-[2.5rem] dark:text-white"}>
-          {changeHelloWord()}
-        </label>
-      </div>
-
-      <div className="flex justify-between ">
+    <div className={"flex flex-col mx-40   " + (darkMode ? "dark" : "")}>
+      <div className="flex justify-between max-[960px]:flex-col-reverse max-[960px]:gap-8">
         <label
           className={
-            "z-20 relative font-semibold text-[3.5rem] w-1/2 dark:text-white"
+            "z-20 relative font-semibold text-[3.5rem] w-1/2 dark:text-white max-[960px]:w-full max-[960px]:text-[3rem] max-[376px]:text-[1rem]"
           }
         >
+          <div className="mb-4">
+            <label
+              className={
+                "font-semibold text-[2.5rem] dark:text-white max-[376px]:text-xs"
+              }
+            >
+              {changeHelloWord()}
+            </label>
+          </div>
           {changeIntroDescription()}
           <div
             className={
-              "absolute -z-40 w-[12rem] h-[3rem] bg-pink-600 rounded-[.5rem] translate-x-[-2rem] " +
+              "absolute -z-40 w-[12rem] h-[3rem] bg-pink-600 rounded-[.5rem] translate-x-[-2rem] max-[960px]:translate-y-[-20rem] " +
               (language === TURKISH
                 ? "translate-y-[-23rem]"
                 : "translate-y-[-18rem]")
@@ -53,9 +56,9 @@ export function Introduction() {
           ></div>
         </label>
 
-        <div className="relative w-[30rem] h-[27.5rem] bg-pink-600 rounded-[2.5rem] mr-8">
+        <div className="relative w-[30rem] h-[27.5rem] bg-pink-600 rounded-[2.5rem] mr-8 max-[376px]:w-[5rem] max-[376px]:h-[5rem] max-[376px]:rounded-md">
           <img
-            className="absolute w-[30rem] h-[27.5rem] mt-6 ml-6 rounded-[2.5rem]"
+            className="absolute w-[30rem] h-[27.5rem] mt-6 ml-6 rounded-[2.5rem] max-[376px]:w-[5rem] max-[376px]:h-[5rem] max-[376px]:rounded-md"
             src={profilePhoto}
           />
         </div>
@@ -94,7 +97,7 @@ export function Introduction() {
           aliumurkucur@gmail.com
         </a>{" "}
       </label>
-      <div className="absolute z-10 w-[8rem] h-[5rem] bg-pink-600 rounded-l-[5rem] translate-x-[100.94rem] translate-y-[34rem]"></div>
+      <div className="absolute z-10 w-[8rem] h-[5rem] bg-pink-600 rounded-l-[5rem] right-0 translate-y-[34rem]"></div>
     </div>
   );
 }

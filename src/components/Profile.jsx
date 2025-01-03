@@ -9,7 +9,7 @@ export function Profile() {
     <div className={darkMode ? "dark" : ""}>
       <div
         className={
-          "flex justify-center flex-col items-center pb-[6rem] bg-gray-200 dark:bg-zinc-800"
+          "flex justify-center flex-col items-center pb-[6rem] bg-gray-200 dark:bg-zinc-800 "
         }
       >
         <h1 className={"font-semibold text-[3rem] mt-16 mb-8 dark:text-white"}>
@@ -20,15 +20,15 @@ export function Profile() {
         <section className="flex flex-row gap-14">
           <div
             className={
-              "absolute rounded-2xl w-[37rem] h-[22.5rem] translate-x-4 translate-y-2 bg-gray-400 dark:bg-gray-600"
+              "absolute rounded-2xl w-[37rem] h-[22.5rem] translate-x-4 translate-y-2 bg-gray-400 dark:bg-gray-600 max-[960px]:w-[31.25rem]"
             }
           ></div>
           <div
             className={
-              "relative z-30 flex flex-col gap-6 rounded-2xl border-none  w-[37rem] h-[22rem] bg-white dark:bg-gray-700"
+              "relative z-30 flex flex-col gap-6 rounded-2xl border-none  w-[37rem] h-[22rem] bg-white dark:bg-gray-700 "
             }
           >
-            <div className="ml-12 mt-8">
+            <div className="ml-12 mt-8 ">
               <label className=" text-red-600 text-[2rem]">
                 {language === TURKISH
                   ? profileLanguage.turkishBasicInfo
@@ -47,7 +47,7 @@ export function Profile() {
                     ? profileLanguage.turkishCityOfResidence
                     : profileLanguage.englishCityOfResidence}
                 </label>
-                <label className="font-bold mb-14 text-[1.15rem] dark:text-white">
+                <label className="font-bold mb-14 text-[1.15rem] dark:text-white max-[960px]:mb-0">
                   {language === TURKISH
                     ? profileLanguage.turkishEducation
                     : profileLanguage.englishEducation}
@@ -78,9 +78,9 @@ export function Profile() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row gap-6 w-[37rem] h-[22rem]">
-            <div className="flex flex-col gap-4 ml-8 mt-8">
-              <label className="relative z-10 font-semibold text-2xl dark:text-white">
+          <div className="flex flex-row gap-6 w-[37rem]  max-[960px]:w-1/2 max-[960px]:translate-y-[-2rem]">
+            <div className="flex flex-col gap-4 ml-8 mt-8 max-[960px]:w-full">
+              <label className="relative z-10 font-semibold text-2xl dark:text-white ">
                 {language === TURKISH
                   ? profileLanguage.turkishAboutMe
                   : profileLanguage.englishAboutMe}
@@ -88,8 +88,8 @@ export function Profile() {
                 <div className="absolute -z-10 w-[6rem] h-[1.5rem] bg-blue-300 rounded-[.5rem] translate-y-[-1rem] translate-x-[-1rem]"></div>
               </label>
 
-              <div className="flex flex-col ">
-                <label className="text-lg mb-4 dark:text-white">
+              <div className="flex flex-col max-[960px]:w-[90%] ">
+                <label className="text-lg mb-4 dark:text-white max-[960px]:text-[1rem] ">
                   {language === TURKISH
                     ? profileLanguage.turkishAboutMeFirstPartDescp
                     : profileLanguage.englishAbouteMeFirstDescp}
@@ -106,7 +106,7 @@ export function Profile() {
                     ? profileLanguage.turkishAboutMeThirdPartDescp
                     : profileLanguage.englishAbouteMeThirdDescp}
                 </label>
-                <label className="text-lg dark:text-white">
+                <label className="text-lg dark:text-white max-[960px]:text-[1rem] ">
                   {language === TURKISH
                     ? profileLanguage.turkishAboutMeFinalPartDescp
                     : profileLanguage.englishAbouteMeFinalDescp}

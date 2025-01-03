@@ -17,13 +17,13 @@ export function Projects() {
 
   return (
     <section className={darkMode ? "dark" : ""}>
-      <div className="flex flex-col justify-center items-center pt-24  pb-[90rem] dark:bg-zinc-700">
+      <div className="flex flex-col justify-center items-center pt-24 pb-16 dark:bg-zinc-700">
         <label className="text-[3rem] mb-8 font-semibold dark:text-white">
           {language === TURKISH
             ? projectsArea.turkishTitle
             : projectsArea.englishTitle}
         </label>
-        <div className="flex gap-16 h-[50rem] ">
+        <div className="flex gap-16">
           <div className="flex flex-wrap gap-16 justify-center ">
             {projectsInformation.map((item, index) => {
               return (

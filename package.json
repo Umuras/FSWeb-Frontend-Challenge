@@ -10,12 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.62.11",
     "axios": "^1.7.9",
     "boxicons": "^2.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^5.3.4",
-    "react-toastify": "^11.0.2"
+    "react-toastify": "^11.0.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^3.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
